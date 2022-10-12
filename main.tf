@@ -20,7 +20,7 @@ resource "aws_vpc" "default" {
     enable_dns_hostnames = true
     tags = {
         Name = "${var.vpc_name}"
-	Owner = "Sreeharsha Veerapalli"
+	Owner = "Narendra Kasaragadda"
 	environment = "${var.environment}"
     }
 }
@@ -143,4 +143,5 @@ resource "aws_security_group" "allow_all" {
 # echo "Running Terraform Now...!!"
 # terraform init
 # terraform apply --var-file terraform.tfvars -var="aws_access_key=AAAAAAAAAAAAAAAAAA" -var="aws_secret_key=BBBBBBBBBBBBB" --auto-approve
+
 #https://discuss.devopscube.com/t/how-to-get-the-ami-id-after-a-packer-build/36
